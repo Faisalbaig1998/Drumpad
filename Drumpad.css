@@ -1,0 +1,88 @@
+body,
+head {
+  margin: 0;
+  padding: 0;
+  background-color: bisque;
+}
+
+.active {
+  border: red 2px solid;
+  transform: translate(1px, 5px);
+  z-index: 1;
+}
+
+.drum-pad:active {
+  transform: translate(1px, 5px);
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#display {
+  background-color: rgb(185, 57, 57);
+  /*background-image: linear-gradient(to top left, rgb(255, 153, 0), yellow);*/
+  padding: 40px;
+  width: 600px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 7px solid black;
+}
+
+#wordpad {
+  display: grid;
+  grid-template-columns: 80px 80px 80px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+#reaction-box {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+  border: 1px solid black;
+}
+
+.drum-pad:focus {
+  outline: 0px;
+}
+/*
+#buttons{
+    width: 200px;
+    display: flex;
+}
+*/
+
+#volumepad {
+  width: 300px;
+  font-family: monospace;
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.drum-pad {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(141, 21, 121);
+  background-color: beige;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 70px;
+  width: 70px;
+  border: 1px solid black;
+  font-size: 20px;
+  box-shadow: 4px 4px 5px rgb(39, 39, 39);
+  transition: width 0.1s;
+}
